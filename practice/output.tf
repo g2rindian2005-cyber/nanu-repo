@@ -1,3 +1,3 @@
-output "instance_id" {
-  value = aws_instance.name
+output "api_url" {
+  value = aws_apigatewayv2_api.api.api_endpoint
 }

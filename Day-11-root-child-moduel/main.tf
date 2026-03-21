@@ -12,3 +12,10 @@ module "ec2" {
   instance_id = var.instance_type  # ⚠️ only if module expects this name
 
 }
+# s3 bucket
+module "s3" {
+  source = "./moduls/vpc/s3"
+   bucket_name = var.bucket_name
+   environment = var.environment
+
+}
